@@ -70,5 +70,4 @@ RUN set -eux \
     && mkdir ~/.ssh \
     && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
-COPY ./scripts/ /usr/local/bin/
 WORKDIR /workspace
