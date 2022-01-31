@@ -23,13 +23,10 @@
 # Container image
 NAME ?= hms-build-environment
 VERSION ?= $(shell cat .version)
-VERSION_MAJOR_MINOR ?= $(shell echo "${VERSION}" | egrep -o "^[0-9]+.[0-9]+")
-VERSION_MAJOR ?= $(shell cat .version_major)
 
 all: image
 
 image:
 	docker build ${NO_CACHE} --pull ${DOCKER_ARGS} --tag '${NAME}:${VERSION}' .
-	docker tag '${NAME}:${VERSION}' '${NAME}:${VERSION_MAJOR}'
 
 clean:
