@@ -21,7 +21,7 @@
 # OTHER DEALINGS IN THE SOFTWARE.
 
 # Container image
-NAME ?= hms-build-scripts
+NAME ?= hms-build-environment
 VERSION ?= $(shell cat .version)
 VERSION_MAJOR_MINOR ?= $(shell echo "${VERSION}" | egrep -o "^[0-9]+.[0-9]+")
 VERSION_MAJOR ?= $(shell cat .version_major)
