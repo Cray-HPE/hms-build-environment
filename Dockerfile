@@ -41,7 +41,7 @@ ARG KUBECTL_VERSION=v1.19.15
 RUN wget -q https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl
 
-ARG HELM_VERSION=v3.7.1
+ARG HELM_VERSION=v3.10.0
 RUN set -eux \
     && mkdir /tmp/helm \
     && cd /tmp/helm \
