@@ -46,7 +46,7 @@ The following Alpine packages are installed:
 | Tool          | Version  |
 | ------------- | -------- |
 | kubectl       | v1.19.15 |
-| helm          | v3.7.1   | 
+| helm          | v3.10.0  | 
 | chart-testing | v3.4.0   |
 | yq            | v4.14.1  | 
 
