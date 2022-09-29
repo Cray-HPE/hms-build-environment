@@ -67,6 +67,9 @@ RUN set -exu \
     && chmod +x /usr/bin/yq
 
 RUN set -eux \
+    && git config --global --add safe.directory /github/workspace
+
+RUN set -eux \
     && mkdir ~/.ssh \
     && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
